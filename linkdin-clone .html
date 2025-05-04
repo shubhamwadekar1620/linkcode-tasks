@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinkedIn Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f3f2ef;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar h1 {
+      color: #0a66c2;
+      font-size: 24px;
+    }
+
+    .navbar input {
+      padding: 8px 12px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      width: 300px;
+    }
+
+    .navbar nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+    }
+
+    /* Main Layout */
+    .main {
+      display: flex;
+      padding: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 25%;
+      padding: 15px;
+      background-color: white;
+      margin-right: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .sidebar h3 {
+      margin-bottom: 10px;
+    }
+
+    /* Feed */
+    .feed {
+      flex: 1;
+    }
+
+    .post {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .post h4 {
+      margin-bottom: 8px;
+      color: #0a66c2;
+    }
+
+    .post p {
+      color: #333;
+    }
+
+    /* Right Sidebar */
+    .rightbar {
+      width: 25%;
+      padding: 15px;
+      background-color: white;
+      margin-left: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .rightbar h3 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>LinkedInClone</h1>
+    <input type="text" placeholder="Search...">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">My Network</a>
+      <a href="#">Jobs</a>
+      <a href="#">Messaging</a>
+      <a href="#">Me</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="sidebar">
+      <h3>Profile</h3>
+      <p>John Doe</p>
+      <p>Cybersecurity Researcher</p>
+    </div>
+
+    <div class="feed">
+      <div class="post">
+        <h4>Jane Smith</h4>
+        <p>Excited to share that I’ve joined XYZ Corp as a Security Analyst!</p>
+      </div>
+
+      <div class="post">
+        <h4>Mark Lee</h4>
+        <p>Looking for opportunities in network security. Happy to connect!</p>
+      </div>
+
+      <div class="post">
+        <h4>Priya Patel</h4>
+        <p>Published a new paper on AI-powered phishing detection 🔍</p>
+      </div>
+    </div>
+
+    <div class="rightbar">
+      <h3>Trending Topics</h3>
+      <ul>
+        <li>#Cybersecurity</li>
+        <li>#AI</li>
+        <li>#JobSearch</li>
+        <li>#Hiring</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
