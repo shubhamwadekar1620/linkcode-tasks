@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Pay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8fb;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #232f3e;
+            color: #fff;
+            padding: 16px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #ff9900;
+        }
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: #ff9900;
+            color: #232f3e;
+            text-align: center;
+            padding: 50px 20px 30px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+        }
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+        .section-title {
+            color: #232f3e;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .pay-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+        .pay-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 20px;
+            text-align: center;
+        }
+        .pay-card img {
+            width: 60px;
+            margin-bottom: 12px;
+        }
+        .pay-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 6px;
+        }
+        .pay-desc {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        .pay-btn {
+            background: #232f3e;
+            color: #fff;
+            border: none;
+            padding: 8px 0;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+        .pay-btn:hover {
+            background: #131921;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Amazon Pay</div>
+        <div class="nav-links">
+            <a href="Amazon_clone.html">Home</a>
+            <a href="amazonpay.html">Amazon Pay</a>
+            <a href="bestseller.html">Best Sellers</a>
+            <a href="sell.html">Sell</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>Amazon Pay</h1>
+        <p>Fast, easy, and secure payments for shopping, bills, and more.</p>
+    </div>
+    <div class="content">
+        <div class="section-title">What can you do with Amazon Pay?</div>
+        <div class="pay-grid">
+            <div class="pay-card">
+                <img src="https://img.icons8.com/ios-filled/100/000000/online-money-transfer.png" alt="Send Money">
+                <div class="pay-title">Send Money</div>
+                <div class="pay-desc">Transfer money instantly to friends and family.</div>
+                <button class="pay-btn">Send Now</button>
+            </div>
+            <div class="pay-card">
+                <img src="https://img.icons8.com/ios-filled/100/000000/bill.png" alt="Pay Bills">
+                <div class="pay-title">Pay Bills</div>
+                <div class="pay-desc">Recharge your mobile, pay electricity, water, and gas bills.</div>
+                <button class="pay-btn">Pay Bills</button>
+            </div>
+            <div class="pay-card">
+                <img src="https://img.icons8.com/ios-filled/100/000000/credit-card.png" alt="Shop Online">
+                <div class="pay-title">Shop Online</div>
+                <div class="pay-desc">Use Amazon Pay balance for fast checkout on Amazon and partner sites.</div>
+                <button class="pay-btn">Shop Now</button>
+            </div>
+            <div class="pay-card">
+                <img src="https://img.icons8.com/ios-filled/100/000000/discount--v1.png" alt="Offers">
+                <div class="pay-title">Exclusive Offers</div>
+                <div class="pay-desc">Get cashback and discounts on payments and shopping.</div>
+                <button class="pay-btn">View Offers</button>
+            </div>
+            <div class="pay-card">
+                <img src="https://img.icons8.com/ios-filled/100/000000/lock-2.png" alt="Secure">
+                <div class="pay-title">100% Secure</div>
+                <div class="pay-desc">Your transactions are protected with advanced security.</div>
+                <button class="pay-btn">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
